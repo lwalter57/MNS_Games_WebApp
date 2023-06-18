@@ -1,24 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\stagiaire\\Documents\\GitHub\\MNS_Games_WebApp\\MNS_Games_WebApplication.csproj": {}
+    "C:\\Users\\WALTER\\Documents\\GitHub\\MNS_Games_WebApp\\MNS_Games_WebApplication.csproj": {}
   },
   "projects": {
-    "C:\\Users\\stagiaire\\Documents\\GitHub\\MNS_Games_WebApp\\MNS_Games_WebApplication.csproj": {
+    "C:\\Users\\WALTER\\Documents\\GitHub\\MNS_Games_WebApp\\MNS_Games_WebApplication.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\stagiaire\\Documents\\GitHub\\MNS_Games_WebApp\\MNS_Games_WebApplication.csproj",
+        "projectUniqueName": "C:\\Users\\WALTER\\Documents\\GitHub\\MNS_Games_WebApp\\MNS_Games_WebApplication.csproj",
         "projectName": "MNS_Games_WebApplication",
-        "projectPath": "C:\\Users\\stagiaire\\Documents\\GitHub\\MNS_Games_WebApp\\MNS_Games_WebApplication.csproj",
-        "packagesPath": "C:\\Users\\stagiaire\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\stagiaire\\Documents\\GitHub\\MNS_Games_WebApp\\obj\\",
+        "projectPath": "C:\\Users\\WALTER\\Documents\\GitHub\\MNS_Games_WebApp\\MNS_Games_WebApplication.csproj",
+        "packagesPath": "C:\\Users\\WALTER\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\WALTER\\Documents\\GitHub\\MNS_Games_WebApp\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-        ],
         "configFilePaths": [
-          "C:\\Users\\stagiaire\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Users\\WALTER\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -26,7 +22,7 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Program Files\\dotnet\\library-packs": {},
+          "C:\\Program Files\\dotnet\\sdk\\7.0.302\\Sdks\\Microsoft.NET.Sdk.Web\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -89,7 +85,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.102\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.302\\RuntimeIdentifierGraph.json"
         }
       }
     }

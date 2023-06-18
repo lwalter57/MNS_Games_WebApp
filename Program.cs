@@ -1,4 +1,5 @@
 using Microsoft.EntityFrameworkCore;
+using MNS_Games_WebApplication.Models;
 
 namespace MNS_Games_WebApplication
 {
@@ -10,9 +11,11 @@ namespace MNS_Games_WebApplication
 
             // Add services to the container.
             builder.Services.AddRazorPages();
+            builder.Services.AddControllersWithViews();
             builder.Services.AddDbContext<MnsgamesContext>(options =>
-                                                    options.UseSqlServer(builder.Configuration.GetConnectionString("devConn")));
+                                                    options.UseSqlServer(builder.Configuration.GetConnectionString("default")));
 
+            builder.Services.AddDistributedMemoryCache();
             var app = builder.Build();
 
             // Configure the HTTP request pipeline.
@@ -29,6 +32,7 @@ namespace MNS_Games_WebApplication
             app.UseRouting();
 
             app.UseAuthorization();
+            app.MapDefaultControllerRoute();
 
             app.MapRazorPages();
 

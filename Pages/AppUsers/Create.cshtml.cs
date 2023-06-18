@@ -7,7 +7,7 @@ using Microsoft.AspNetCore.Mvc.RazorPages;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using MNS_Games_WebApplication.Models;
 
-namespace MNS_Games_WebApplication.Views
+namespace MNS_Games_WebApplication.Pages.AppUsers
 {
     public class CreateModel : PageModel
     {

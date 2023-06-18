@@ -1,11 +1,11 @@
 ﻿@page
-@model MNS_Games_WebApplication.Views.EditModel
+@model MNS_Games_WebApplication.Pages.AppUsers.CreateModel
 
 @{
-    ViewData["Title"] = "Edit";
+    ViewData["Title"] = "Create";
 }
 
-<h1>Edit</h1>
+<h1>Create</h1>
 
 <h4>AppUser</h4>
 <hr />
@@ -13,7 +13,6 @@
     <div class="col-md-4">
         <form method="post">
             <div asp-validation-summary="ModelOnly" class="text-danger"></div>
-            <input type="hidden" asp-for="AppUser.Id" />
             <div class="form-group">
                 <label asp-for="AppUser.LoginNickname" class="control-label"></label>
                 <input asp-for="AppUser.LoginNickname" class="form-control" />
@@ -70,14 +69,14 @@
                 <span asp-validation-for="AppUser.Country" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <input type="submit" value="Save" class="btn btn-primary" />
+                <input type="submit" value="Create" class="btn btn-primary" />
             </div>
         </form>
     </div>
 </div>
 
 <div>
-    <a asp-page="./Index">Back to List</a>
+    <a asp-page="Index">Back to List</a>
 </div>
 
 @section Scripts {

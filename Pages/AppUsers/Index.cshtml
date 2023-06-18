@@ -1,4 +1,5 @@
-﻿@model IEnumerable<MNS_Games_WebApplication.Models.AppUser>
+﻿@page
+@model MNS_Games_WebApplication.Pages.AppUsers.IndexModel
 
 @{
     ViewData["Title"] = "Index";
@@ -7,49 +8,49 @@
 <h1>Index</h1>
 
 <p>
-    <a asp-action="Create">Create New</a>
+    <a asp-page="Create">Create New</a>
 </p>
 <table class="table">
     <thead>
         <tr>
             <th>
-                @Html.DisplayNameFor(model => model.LoginNickname)
+                @Html.DisplayNameFor(model => model.AppUser[0].LoginNickname)
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.LoginPassword)
+                @Html.DisplayNameFor(model => model.AppUser[0].LoginPassword)
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.Email)
+                @Html.DisplayNameFor(model => model.AppUser[0].Email)
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.FirstName)
+                @Html.DisplayNameFor(model => model.AppUser[0].FirstName)
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.LastName)
+                @Html.DisplayNameFor(model => model.AppUser[0].LastName)
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.IsAdmin)
+                @Html.DisplayNameFor(model => model.AppUser[0].IsAdmin)
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.StreetNumber)
+                @Html.DisplayNameFor(model => model.AppUser[0].StreetNumber)
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.StreetName)
+                @Html.DisplayNameFor(model => model.AppUser[0].StreetName)
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.Zipcode)
+                @Html.DisplayNameFor(model => model.AppUser[0].Zipcode)
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.City)
+                @Html.DisplayNameFor(model => model.AppUser[0].City)
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.Country)
+                @Html.DisplayNameFor(model => model.AppUser[0].Country)
             </th>
             <th></th>
         </tr>
     </thead>
     <tbody>
-@foreach (var item in Model) {
+@foreach (var item in Model.AppUser) {
         <tr>
             <td>
                 @Html.DisplayFor(modelItem => item.LoginNickname)
@@ -85,9 +86,9 @@
                 @Html.DisplayFor(modelItem => item.Country)
             </td>
             <td>
-                <a asp-action="Edit" asp-route-id="@item.Id">Edit</a> |
-                <a asp-action="Details" asp-route-id="@item.Id">Details</a> |
-                <a asp-action="Delete" asp-route-id="@item.Id">Delete</a>
+                <a asp-page="./Edit" asp-route-id="@item.Id">Edit</a> |
+                <a asp-page="./Details" asp-route-id="@item.Id">Details</a> |
+                <a asp-page="./Delete" asp-route-id="@item.Id">Delete</a>
             </td>
         </tr>
 }

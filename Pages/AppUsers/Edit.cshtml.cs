@@ -8,7 +8,7 @@ using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using MNS_Games_WebApplication.Models;
 
-namespace MNS_Games_WebApplication.Views
+namespace MNS_Games_WebApplication.Pages.AppUsers
 {
     public class EditModel : PageModel
     {
