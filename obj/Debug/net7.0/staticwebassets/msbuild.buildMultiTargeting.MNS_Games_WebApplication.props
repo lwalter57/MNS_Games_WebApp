@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\MNS_Games_WebApplication.props" />
+</Project>
