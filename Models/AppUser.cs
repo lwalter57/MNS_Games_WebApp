@@ -29,9 +29,4 @@ public partial class AppUser
 
     public string? Country { get; set; }
 
-    public virtual ICollection<Game> Games { get; set; } = new List<Game>();
-
-    public virtual ICollection<Quiz> Quizzes { get; set; } = new List<Quiz>();
-
-    public virtual ICollection<Registrate> Registrates { get; set; } = new List<Registrate>();
 }
